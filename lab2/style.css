@@ -1,0 +1,121 @@
+:root {
+    --color-primary: hsl(230deg, 100%, 69%);
+    --color-secondary: hsl(333deg, 100%, 52%);
+}
+h1{
+    color: var(--color-primary);
+}
+
+.navbar {
+    background: var(--color-secondary) !important;
+    z-index: 1000;
+}
+header {
+    position: relative;
+    background-image: url('night.jpg');
+    height: 100vh;
+    background-position: bottom;
+    background-repeat: no-repeat;
+    background-size: cover;
+    font-size: 1.1rem;
+}
+.overlay{
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0,0,0,0.5);
+    z-index: 1;
+}
+
+.header-content{
+    z-index: 2;
+}
+
+
+hr {
+    width: 10% !important;
+    margin: auto;
+    border: 1px solid black;
+}
+
+.img {
+    position: relative;
+    transition: all 1s ease;
+}
+.social-links {
+    display: none;
+    justify-content: space-evenly;
+    align-items: center;
+    position: absolute;
+    padding: 0.4rem;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    background-color: var(--color-secondary);
+    color: var(--color-primary) !important;
+}
+
+.img:hover .social-links {
+    display: flex !important;
+}
+
+.card.stuff {
+    border: none;
+}
+
+.stuff .card-text {
+    opacity: 0;
+    transition: opacity 0.5s;
+}
+.card.stuff:hover .card-text {
+    opacity: 1;
+}
+.feature {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.8rem;
+}
+.feature .check {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    align-self: flex-start;
+    background-color: var(--color-secondary);
+    width: fit-content;
+    text-align: center;
+    padding: 0.7rem;
+    border-radius: 50%;
+    color: #fff;
+}
+
+.feature .feature-content {
+    flex: 1;
+}
+
+form button{
+    background-color: var(--color-secondary) !important;
+}
+
+footer{
+    background-color: var(--color-secondary);
+    color: #fff;
+}
+
+a{
+    color: #fff;
+    text-decoration: none;
+}
+
+a:hover{
+    color: #ddd;
+}
+
+footer .social-links{
+    position: relative;
+    display: flex !important;
+    justify-content: flex-start;
+    gap: 2rem;
+}
